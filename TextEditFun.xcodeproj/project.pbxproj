@@ -14,6 +14,8 @@
 		0E0695B11C117EA300A8D50B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E0695AF1C117EA300A8D50B /* LaunchScreen.storyboard */; };
 		0E0695BC1C117EA300A8D50B /* TextEditFunTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0695BB1C117EA300A8D50B /* TextEditFunTests.swift */; };
 		0E0695C71C117EA300A8D50B /* TextEditFunUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0695C61C117EA300A8D50B /* TextEditFunUITests.swift */; };
+		0E0695D61C1181B100A8D50B /* ZipCodeTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0695D51C1181B100A8D50B /* ZipCodeTextFieldDelegate.swift */; };
+		0E0695D81C11825400A8D50B /* CashTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0695D71C11825400A8D50B /* CashTextFieldDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		0E0695C21C117EA300A8D50B /* TextEditFunUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextEditFunUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E0695C61C117EA300A8D50B /* TextEditFunUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditFunUITests.swift; sourceTree = "<group>"; };
 		0E0695C81C117EA300A8D50B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E0695D51C1181B100A8D50B /* ZipCodeTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipCodeTextFieldDelegate.swift; sourceTree = "<group>"; };
+		0E0695D71C11825400A8D50B /* CashTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashTextFieldDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		0E0695A51C117EA300A8D50B /* TextEditFun */ = {
 			isa = PBXGroup;
 			children = (
+				0E0695D41C11813100A8D50B /* TextEditDelegates */,
 				0E0695A61C117EA300A8D50B /* AppDelegate.swift */,
 				0E0695A81C117EA300A8D50B /* ViewController.swift */,
 				0E0695AA1C117EA300A8D50B /* Main.storyboard */,
@@ -123,6 +128,15 @@
 				0E0695C81C117EA300A8D50B /* Info.plist */,
 			);
 			path = TextEditFunUITests;
+			sourceTree = "<group>";
+		};
+		0E0695D41C11813100A8D50B /* TextEditDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				0E0695D51C1181B100A8D50B /* ZipCodeTextFieldDelegate.swift */,
+				0E0695D71C11825400A8D50B /* CashTextFieldDelegate.swift */,
+			);
+			path = TextEditDelegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +270,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E0695D61C1181B100A8D50B /* ZipCodeTextFieldDelegate.swift in Sources */,
+				0E0695D81C11825400A8D50B /* CashTextFieldDelegate.swift in Sources */,
 				0E0695A91C117EA300A8D50B /* ViewController.swift in Sources */,
 				0E0695A71C117EA300A8D50B /* AppDelegate.swift in Sources */,
 			);
@@ -482,6 +498,7 @@
 				0E0695CD1C117EA400A8D50B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0E0695CE1C117EA400A8D50B /* Build configuration list for PBXNativeTarget "TextEditFunTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +507,7 @@
 				0E0695D01C117EA400A8D50B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0E0695D11C117EA400A8D50B /* Build configuration list for PBXNativeTarget "TextEditFunUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +516,7 @@
 				0E0695D31C117EA400A8D50B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
